@@ -1,0 +1,72 @@
+                        Module 7) JQuery Basic, Effects & Advanced
+
+QUE 1: What is jQuery?
+ANS  :  jQuery is an open-source JavaScript library that simplifies the interactions between an HTML/CSS document, or more precisely the Document Object Model (DOM), and JavaScript. Elaborating the terms, it simplifies HTML document traversing and manipulation, browser event handling, DOM animations, Ajax interactions, and cross-browser JavaScript development.
+
+QUE 2: How to Apply CSS Using JQuery, How to Add Class and Remove Class in
+Jquery, JQuery Animation?
+ANS  :  In this article, we will explore how we can apply CSS styles to HTML elements. It is recommended that you have some basic knowledge of HTML, CSS, JavaScript, and jQuery before beginning this article.
+
+It is possible to change the CSS property of an element by using a simple JavaScript API, but we try to complete this challenge using jQuery css() method.  
+
+Syntax:
+
+$().css(propertyname, value);
+$().css(properties);
+There are many types of CSS methods, which means that each method has the same name but takes different parameters. We will discuss only two methods, one of which is used to change a single CSS property, while the other is used to change multiple CSS properties simultaneously. With the second method, you can pass a JSON string object as a parameter that you want to apply to the HTML element. 
+
+QUE 3: How to create slider with animation?
+ANS  :    jQuery is a very powerful JavaScript framework.Using jQuery, we can add special effects to our website or web-based application.
+We can add various effects using jQuery such as hide/show, fading effects, animation, call back and many more.
+For hide/show, Toggle, Fade effect.
+The jQuery contains the library of several functions that provide techniques for adding animation to a web page. These include simple animation, standard animations.
+In this article, we are going to learn how to add above effects to our web page.
+
+jQuery Animation:
+
+In jQuery, we can produce various types of animation using the animate() method. This method can produce simple to complex animation in the web page. Using animation, we can change the properties of HTML elements such as background colour, changing border styles, changing navigation properties, formatting the font properties, etc.
+We apply changes to the properties by providing the styles rules in the params parameter of the method.
+Syntax:
+
+$("selector").animate({params}, speed, callback);
+
+Let’s see it’s implementation with JavaScript code:
+In this code, we animate the rectangle and change its shape to circle.
+
+
+<!DOCTYPE html> 
+<html> 
+    
+<head> 
+    <script src="https://ajax.googleapis.com/ajax/ 
+                libs/jquery/3.3.1/jquery.min.js"> 
+</script> 
+    <style type="text/css"> 
+        div { 
+            width: 100px; 
+            height: 100px; 
+            background-color: green; 
+        } 
+    </style> 
+</head> 
+    
+<body> 
+    <div></div> 
+    <br/> 
+    <button id="animate">Animate Me</button> 
+    <script type="text/javascript"> 
+        $("#animate").click(function() { 
+            $("div").animate({ 
+                    width: "200px", 
+                    height: "200px", 
+                    borderRadius: "50%", 
+                    marginLeft: "210px", 
+                    marginTop: "70px", 
+                }, 
+                2000, 
+            ); 
+        }); 
+    </script> 
+</body> 
+    
+</html> 
